@@ -74,3 +74,17 @@ body{
     cursor: pointer;
 }
 
+
+/*Adaptiv*/
+
+
+/*for phone*/
+@media(max-width: 500px){
+    .pw-container{
+        width: 380px;
+    }
+    .pw{
+        font-size: 1.1rem;
+    }
+}
+

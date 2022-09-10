@@ -11,7 +11,8 @@ body{
     min-height: 100vh;
 }
 .pw-container{
-    width: 580px;
+    width: 40%;
+    margin: auto;
     border-color: rgb(69, 17, 118);
     background-color: #443B9E;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
@@ -72,19 +73,5 @@ body{
     border: none;
     width: 100%;
     cursor: pointer;
-}
-
-
-/*Adaptiv*/
-
-
-/*for phone*/
-@media(max-width: 500px){
-    .pw-container{
-        width: 380px;
-    }
-    .pw{
-        font-size: 1.1rem;
-    }
 }
 

@@ -5,50 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generate</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="adaptived.css">
 </head>
 <body>
-    <div class="pw-container">
-        <a href="https://time.is/Russia" id="time_is_link" rel="nofollow" style="font-size:36px">time.is:</a>
-        <br>
-        <span id="Russia_z71d" style="font-size:36px"></span>
-    </div>
-    <div class="pw-container">
-        <div class="pw-header">
-            <div class="pw">
-                <span id="pw">Password Here</span>
-                <button id="copy">Copy</button>
+    <div class="container">
+        <div class="container-time">
+            <a href="https://time.is/Russia" id="time_is_link" rel="nofollow">time.is</a>
+            <br>
+            <span id="Russia_z71d" class="time"><p>vdfddfdkj</p></span><br>
+            <span id="Russia_z72d" class="date"></span>
+        </div>
+        <div class="pw-container">
+            <div class="pw-header">
+                <div class="pw">
+                    <span id="pw">Password Here</span>
+                    <button id="copy">Copy</button>
+                </div>
+            </div>
+            <div class="pw-body">
+                <div class="form-control">
+                    <lable for="length">Password Length</lable>
+                    <input id="len" value="10" type="number" min="8" max="30">
+                </div>
+                <div class="form-control">
+                    <lable for="upper">Contain Uppercase Letters</lable>
+                    <input id="upper" type="checkbox">
+                </div>
+                <div class="form-control">
+                    <lable for="lower">Contain Lowercase Letters</lable>
+                    <input id="lower" type="checkbox" checked>
+                </div>
+                <div class="form-control">
+                    <lable for="number">Contain Numbers</lable>
+                    <input id="number" type="checkbox">
+                </div>
+                <div class="form-control">
+                    <lable for="symbol">Contain Symbol</lable>
+                    <input id="symbol" type="checkbox">
+                </div>
+                <button class="generate" id="generate">Generate Password</button>
             </div>
         </div>
-        <div class="pw-body">
-            <div class="form-control">
-                <lable for="length">Password Length</lable>
-                <input id="len" value="10" type="number" min="8" max="30">
-            </div>
-            <div class="form-control">
-                <lable for="upper">Contain Uppercase Letters</lable>
-                <input id="upper" type="checkbox">
-            </div>
-            <div class="form-control">
-                <lable for="lower">Contain Lowercase Letters</lable>
-                <input id="lower" type="checkbox">
-            </div>
-            <div class="form-control">
-                <lable for="number">Contain Numbers</lable>
-                <input id="number" type="checkbox">
-            </div>
-            <div class="form-control">
-                <lable for="symbol">Contain Symbol</lable>
-                <input id="symbol" type="checkbox">
-            </div>
-            <button class="generate" id="generate">Generate Password</button>
-        </div>
     </div>
-        
     <script src="//widget.time.is/ru.js"></script>
     <script>
-    time_is_widget.init({Russia_z71d:{template:"TIME<br>DATE", date_format:"dnum dayname,  monthname yearг"}});
+        time_is_widget.init({Russia_z71d:{},
+                             Russia_z72d:{template:"DATE", date_format:"dnum dayname, monthname year"}});
     </script>
     
 

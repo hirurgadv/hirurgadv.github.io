@@ -13,6 +13,8 @@ body{
 .container-time{
     margin: 0px auto 40px;
     text-align: center;
+    position: relative;
+    bottom: 200px;
 }
 a::after,
 a::before,
@@ -31,6 +33,7 @@ a{
 }
 .container{
     width: 100%;
+    position: absolute;
 }
 .pw-container{
     width: 40%;
